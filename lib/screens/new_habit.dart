@@ -103,7 +103,7 @@ class NewHabit extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 30),
+                    SizedBox(height: 31),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
