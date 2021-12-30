@@ -6,6 +6,7 @@ import 'package:flutter_switch/flutter_switch.dart';
 import 'package:syalo/widget/app_header.dart';
 import 'package:syalo/widget/color_box.dart';
 import 'package:syalo/widget/search_field.dart';
+import 'package:syalo/widget/vent_card.dart';
 
 class VoiceComing extends StatefulWidget {
   const VoiceComing({Key? key}) : super(key: key);
@@ -37,73 +38,111 @@ class _VoiceComingState extends State<VoiceComing> {
           ),
         ),
         body: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              children: [
-                AppHeader(icon: Icons.message_outlined),
-                SizedBox(height: 27),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: SizedBox(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            child: DefaultTabController(
+              length: 2,
+              initialIndex: 0,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
                   children: [
-                    Text(
-                      'Anonymous',
-                      style:
-                          TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+                    AppHeader(icon: Icons.message_outlined),
+                    SizedBox(height: 27),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Anonymous',
+                          style: TextStyle(
+                              fontSize: 22, fontWeight: FontWeight.w600),
+                        ),
+                        FlutterSwitch(
+                          width: 75.0,
+                          height: 30.0,
+                          valueFontSize: 14.0,
+                          inactiveColor: Color(0xff9C0000),
+                          toggleSize: 25.0,
+                          value: status,
+                          borderRadius: 25.0,
+                          padding: 8,
+                          showOnOff: true,
+                          onToggle: (bool isOn) {
+                            setState(() {
+                              _attemptChange(isOn);
+                            });
+                          },
+                        ),
+                      ],
                     ),
-                    FlutterSwitch(
-                      width: 75.0,
-                      height: 30.0,
-                      valueFontSize: 14.0,
-                      inactiveColor: Color(0xff9C0000),
-                      toggleSize: 25.0,
-                      value: status,
-                      borderRadius: 25.0,
-                      padding: 8,
-                      showOnOff: true,
-                      onToggle: (bool isOn) {
-                        setState(() {
-                          _attemptChange(isOn);
-                        });
-                      },
+                    SizedBox(height: 40),
+                    SearchField(),
+                    SizedBox(height: 66),
+                    TabBar(
+                      isScrollable: false,
+                      labelColor: Colors.black,
+                      unselectedLabelColor: Color(0xff777777),
+                      indicatorColor: Colors.transparent,
+                      tabs: [
+                        Text(
+                          'Voice',
+                          style: TextStyle(
+                            fontSize: 40,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        Text(
+                          'Vent',
+                          style: TextStyle(
+                            fontSize: 40,
+                            fontWeight: FontWeight.w700,
+                            // color: Color(0xff777777),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 50),
+                    Expanded(
+                      child: TabBarView(
+                        children: [
+                          SingleChildScrollView(
+                              physics: BouncingScrollPhysics(),
+                              child: voiceWidget(context)),
+                          SingleChildScrollView(
+                              physics: BouncingScrollPhysics(),
+                              child: ventWidget(context))
+                        ],
+                      ),
                     ),
                   ],
                 ),
-                SizedBox(height: 40),
-                SearchField(),
-                SizedBox(height: 66),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Text(
-                      'Voice',
-                      style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    Text(
-                      'Vent',
-                      style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.w700,
-                        color: Color(0xff777777),
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 50),
-                ColorBox(color: Color(0xff0CA7FE)),
-                SizedBox(height: 30),
-                ColorBox(color: Color(0xffFFDD00)),
-                SizedBox(height: 30),
-                ColorBox(color: Color(0xffFF1D00)),
-              ],
+              ),
             ),
           ),
         ),
       ),
     );
   }
+}
+
+Widget voiceWidget(BuildContext context) {
+  return Column(
+    children: [
+      ColorBox(color: Color(0xff0CA7FE)),
+      SizedBox(height: 30),
+      ColorBox(color: Color(0xffFFDD00)),
+      SizedBox(height: 30),
+      ColorBox(color: Color(0xffFF1D00)),
+    ],
+  );
+}
+
+Widget ventWidget(BuildContext context) {
+  return Column(
+    children: [
+      VentCard(),
+      VentCard(),
+    ],
+  );
 }

@@ -12,22 +12,31 @@ class AppHeader2 extends StatelessWidget {
       children: [
         Row(
           children: [
-            Icon(
-              Icons.arrow_back_ios_sharp,
-              size: 28,
+            InkWell(
+              onTap: () {},
+              child: Icon(
+                Icons.arrow_back_ios_sharp,
+                size: 28,
+              ),
             )
           ],
         ),
         Row(
           children: [
-            Icon(
-              Icons.share,
-              size: 28,
+            InkWell(
+              onTap: () {},
+              child: Icon(
+                Icons.share,
+                size: 28,
+              ),
             ),
             SizedBox(width: 10),
-            Icon(
-              Icons.favorite_outline_rounded,
-              size: 28,
+            InkWell(
+              onTap: () {},
+              child: Icon(
+                Icons.favorite_outline_rounded,
+                size: 28,
+              ),
             ),
           ],
         )

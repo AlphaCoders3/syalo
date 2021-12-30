@@ -2,7 +2,6 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:syalo/widget/app_header2.dart';
 
 class SelfLearn extends StatelessWidget {
@@ -45,7 +44,8 @@ class SelfLearn extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 10),
-                Image(image: AssetImage('assets/images/meme.png')),
+                Center(
+                    child: Image(image: AssetImage('assets/images/meme.png'))),
                 SizedBox(height: 30),
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
@@ -72,8 +72,12 @@ class SelfLearn extends StatelessWidget {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(left: 18.0),
-                          child: Image(
-                              image: AssetImage('assets/images/triangle.png')),
+                          child: InkWell(
+                            onTap: () {},
+                            child: Image(
+                                image:
+                                    AssetImage('assets/images/triangle.png')),
+                          ),
                         ),
                         Expanded(
                           child: Column(

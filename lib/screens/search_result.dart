@@ -23,7 +23,7 @@ class SearchResult extends StatelessWidget {
                 SearchField(
                   searchWord: 'search term',
                 ),
-                SizedBox(height: 40),
+                SizedBox(height: 42),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

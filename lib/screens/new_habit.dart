@@ -11,114 +11,120 @@ class NewHabit extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Icon(Icons.arrow_back_ios_sharp),
-                  SizedBox(width: 10),
-                  Text(
-                    'New Habit',
-                    style: TextStyle(
-                      fontSize: 35,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 40),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+        child: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
+          child: Padding(
+            padding: EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
                   children: [
+                    InkWell(
+                        onTap: () {}, child: Icon(Icons.arrow_back_ios_sharp)),
+                    SizedBox(width: 10),
                     Text(
-                      'Title',
+                      'New Habit',
                       style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 25,
+                        fontSize: 35,
+                        fontWeight: FontWeight.w700,
                       ),
                     ),
-                    SizedBox(height: 10),
-                    RandomBox(height: 60, text: ''),
-                    SizedBox(height: 50),
-                    Text(
-                      'Time',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 25,
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Padding(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: MediaQuery.of(context).size.width * 0.12),
-                      child: RandomBox(height: 60, text: ''),
-                    ),
-                    SizedBox(height: 60),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Link to Learn Path',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w600,
-                            fontSize: 25,
-                          ),
-                        ),
-                        Icon(Icons.add, size: 40),
-                      ],
-                    ),
-                    SizedBox(height: 60),
-                    Center(
-                      child: Text(
-                        'Add Habit Partner',
+                  ],
+                ),
+                SizedBox(height: 40),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Title',
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
                           fontSize: 25,
                         ),
                       ),
-                    ),
-                    SizedBox(height: 50),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Assign Points',
+                      SizedBox(height: 10),
+                      RandomBox(height: 60, text: ''),
+                      SizedBox(height: 50),
+                      Text(
+                        'Time',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 25,
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal:
+                                MediaQuery.of(context).size.width * 0.12),
+                        child: RandomBox(height: 60, text: ''),
+                      ),
+                      SizedBox(height: 60),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Link to Learn Path',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 25,
+                            ),
+                          ),
+                          InkWell(
+                              onTap: () {}, child: Icon(Icons.add, size: 40)),
+                        ],
+                      ),
+                      SizedBox(height: 60),
+                      Center(
+                        child: Text(
+                          'Add Habit Partner',
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                             fontSize: 25,
                           ),
                         ),
-                        Container(
-                          width: 48,
-                          height: 34,
-                          decoration: BoxDecoration(
-                            color: Color(0xffc4c4c4),
-                            borderRadius: BorderRadius.circular(10),
+                      ),
+                      SizedBox(height: 50),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Assign Points',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 25,
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 31),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        InkWell(
-                          onTap: () {
-                            // Done
-                          },
-                          child: BlueButton(text: 'Done'),
-                        ),
-                      ],
-                    ),
-                  ],
+                          Container(
+                            width: 48,
+                            height: 34,
+                            decoration: BoxDecoration(
+                              color: Color(0xffc4c4c4),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 31),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          InkWell(
+                            onTap: () {
+                              // Done
+                            },
+                            child: BlueButton(text: 'Done'),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

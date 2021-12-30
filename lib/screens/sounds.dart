@@ -38,18 +38,21 @@ class Sounds extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 45),
-                Container(
-                  alignment: Alignment.center,
-                  width: 75,
-                  height: 75,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(100),
-                    color: Color(0xff0081FF),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    alignment: Alignment.center,
+                    width: 75,
+                    height: 75,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      color: Color(0xff0081FF),
+                    ),
+                    child: Image(
+                        image: AssetImage(
+                      'assets/images/triangle.png',
+                    )),
                   ),
-                  child: Image(
-                      image: AssetImage(
-                    'assets/images/triangle.png',
-                  )),
                 ),
               ],
             ),

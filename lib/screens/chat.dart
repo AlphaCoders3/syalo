@@ -34,7 +34,9 @@ class Chat extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Icon(Icons.arrow_back_ios_sharp),
+                          InkWell(
+                              onTap: () {},
+                              child: Icon(Icons.arrow_back_ios_sharp)),
                           SizedBox(width: 30),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -92,7 +94,7 @@ class Chat extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          MikeIcon(),
+                          InkWell(onTap: () {}, child: MikeIcon()),
                           SizedBox(width: 31),
                           Dot(),
                           SizedBox(width: 10),
@@ -103,12 +105,15 @@ class Chat extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          RotatedBox(
-                            quarterTurns: 1,
-                            child: Icon(
-                              FontAwesomeIcons.phoneSlash,
-                              color: Colors.red,
-                              size: 28,
+                          InkWell(
+                            onTap: () {},
+                            child: RotatedBox(
+                              quarterTurns: 1,
+                              child: Icon(
+                                FontAwesomeIcons.phoneSlash,
+                                color: Colors.red,
+                                size: 28,
+                              ),
                             ),
                           ),
                         ],

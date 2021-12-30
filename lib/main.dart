@@ -1,14 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:syalo/screens/chat.dart';
-import 'package:syalo/screens/favourite.dart';
-import 'package:syalo/screens/learning.dart';
-import 'package:syalo/screens/new_habit.dart';
-import 'package:syalo/screens/request.dart';
-import 'package:syalo/screens/search.dart';
-import 'package:syalo/screens/search_result.dart';
-import 'package:syalo/screens/self_learn.dart';
-import 'package:syalo/screens/sounds.dart';
-import 'package:syalo/screens/voice_coming.dart';
+import 'package:syalo/screens/landing.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const NewHabit(),
+      home: const Landing(),
     );
   }
 }

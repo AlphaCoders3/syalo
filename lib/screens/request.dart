@@ -27,7 +27,10 @@ class Request extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.arrow_back_ios_sharp),
+                              InkWell(
+                                onTap: () {},
+                                child: Icon(Icons.arrow_back_ios_sharp),
+                              ),
                               SizedBox(width: 10),
                               Text(
                                 'Request',
