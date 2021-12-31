@@ -41,17 +41,19 @@ class Sounds extends StatelessWidget {
                 InkWell(
                   onTap: () {},
                   child: Container(
-                    alignment: Alignment.center,
                     width: 75,
                     height: 75,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       color: Color(0xff0081FF),
                     ),
-                    child: Image(
-                        image: AssetImage(
-                      'assets/images/triangle.png',
-                    )),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 7.0),
+                      child: Image(
+                          image: AssetImage(
+                        'assets/images/triangle.png',
+                      )),
+                    ),
                   ),
                 ),
               ],

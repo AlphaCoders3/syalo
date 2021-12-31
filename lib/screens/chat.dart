@@ -186,11 +186,14 @@ class Chat extends StatelessWidget {
                         ],
                         borderRadius: BorderRadius.circular(15),
                       ),
-                      child: Text(
-                        'Message',
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.w300,
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Message',
+                          hintStyle: TextStyle(
+                            fontWeight: FontWeight.w300,
+                            fontSize: 25,
+                          ),
                         ),
                       ),
                     ),
