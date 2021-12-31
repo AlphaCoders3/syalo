@@ -69,7 +69,8 @@ class Screen11 extends StatelessWidget {
                 Container(
                   child: Image(
                     colorBlendMode: BlendMode.overlay,
-                    image: AssetImage('assets/images/undraw_Having_fun_re_vj4h 1.png'),
+                    image: AssetImage(
+                        'assets/images/undraw_Having_fun_re_vj4h 1.png'),
                   ),
                 ),
                 SizedBox(
@@ -117,8 +118,7 @@ class Screen11 extends StatelessWidget {
                     Navigator.push(
                         context,
                         PageTransition(
-                            type: PageTransitionType.rightToLeft,
-                            child: Screen12()));
+                            type: PageTransitionType.fade, child: Screen12()));
                   },
                   child: Container(
                       width: 228.0,

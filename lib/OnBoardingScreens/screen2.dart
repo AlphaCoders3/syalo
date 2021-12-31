@@ -64,7 +64,7 @@ class Screen2 extends StatelessWidget {
                   Navigator.push(
                     context,
                     PageTransition(
-                        type: PageTransitionType.rightToLeft, child: Screen3()),
+                        type: PageTransitionType.fade, child: Screen3()),
                   );
                 },
                 child: Container(
@@ -115,7 +115,7 @@ class Screen2 extends StatelessWidget {
                   Navigator.push(
                     context,
                     PageTransition(
-                        type: PageTransitionType.rightToLeft, child: Screen3()),
+                        type: PageTransitionType.fade, child: Screen3()),
                   );
                 },
                 child: Container(
