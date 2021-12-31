@@ -44,7 +44,7 @@ class _MePageState extends State<MePage> {
                         textAlign: TextAlign.left,
                         style: TextStyle(
                             color: Color.fromRGBO(0, 0, 0, 1),
-                            fontFamily: 'Open Sans',
+
                             fontSize: 30,
                             letterSpacing:
                                 0 /*percentages not used in flutter. defaulting to zero*/,
@@ -59,7 +59,7 @@ class _MePageState extends State<MePage> {
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         color: Color.fromRGBO(0, 0, 0, 1),
-                        fontFamily: 'Open Sans',
+
                         fontSize: 20,
                         letterSpacing:
                             0 /*percentages not used in flutter. defaulting to zero*/,
@@ -75,7 +75,7 @@ class _MePageState extends State<MePage> {
                         textAlign: TextAlign.left,
                         style: TextStyle(
                             color: Color.fromRGBO(0, 0, 0, 1),
-                            fontFamily: 'Open Sans',
+
                             fontSize: 28,
                             letterSpacing:
                                 0 /*percentages not used in flutter. defaulting to zero*/,
@@ -217,7 +217,7 @@ class _MePageState extends State<MePage> {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Color.fromRGBO(0, 0, 0, 1),
-                            fontFamily: 'Open Sans',
+
                             fontSize: 26,
                             letterSpacing:
                                 0 /*percentages not used in flutter. defaulting to zero*/,
@@ -229,7 +229,7 @@ class _MePageState extends State<MePage> {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Color.fromRGBO(0, 0, 0, 1),
-                            fontFamily: 'Open Sans',
+
                             fontSize: 19,
                             letterSpacing:
                                 0 /*percentages not used in flutter. defaulting to zero*/,

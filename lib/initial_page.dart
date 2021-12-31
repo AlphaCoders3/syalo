@@ -175,7 +175,6 @@ class _InitialPageState extends State<InitialPage> {
                                     textAlign: TextAlign.left,
                                     style: TextStyle(
                                         color: Color.fromRGBO(0, 0, 0, 1),
-                                        fontFamily: 'Open Sans',
                                         fontSize: 28,
                                         letterSpacing:
                                             0 /*percentages not used in flutter. defaulting to zero*/,
@@ -187,7 +186,6 @@ class _InitialPageState extends State<InitialPage> {
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         color: Color.fromRGBO(0, 0, 0, 1),
-                                        fontFamily: 'Open Sans',
                                         fontSize: 16,
                                         letterSpacing:
                                             0 /*percentages not used in flutter. defaulting to zero*/,

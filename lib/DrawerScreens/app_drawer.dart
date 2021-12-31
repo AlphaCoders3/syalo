@@ -30,7 +30,6 @@ class AppDrawer extends StatelessWidget {
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         color: Color.fromRGBO(0, 0, 0, 1),
-                        fontFamily: 'Open Sans',
                         fontSize: 28,
                         letterSpacing:
                             0 /*percentages not used in flutter. defaulting to zero*/,
@@ -42,7 +41,6 @@ class AppDrawer extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromRGBO(0, 0, 0, 1),
-                        fontFamily: 'Open Sans',
                         fontSize: 16,
                         letterSpacing:
                             0 /*percentages not used in flutter. defaulting to zero*/,

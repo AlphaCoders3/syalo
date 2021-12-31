@@ -28,7 +28,7 @@ class JournalMore extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromRGBO(0, 0, 0, 1),
-                              fontFamily: 'Open Sans',
+
                               fontSize: 28,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,
@@ -63,7 +63,7 @@ class JournalMore extends StatelessWidget {
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           color: Colors.black,
-                                          fontFamily: 'Open Sans',
+
                                           fontSize: 25,
                                           letterSpacing:
                                               0 /*percentages not used in flutter. defaulting to zero*/,
@@ -109,7 +109,7 @@ class JournalMore extends StatelessWidget {
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           color: Colors.black,
-                                          fontFamily: 'Open Sans',
+
                                           fontSize: 25,
                                           letterSpacing:
                                               0 /*percentages not used in flutter. defaulting to zero*/,
@@ -155,7 +155,7 @@ class JournalMore extends StatelessWidget {
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           color: Colors.black,
-                                          fontFamily: 'Open Sans',
+
                                           fontSize: 25,
                                           letterSpacing:
                                               0 /*percentages not used in flutter. defaulting to zero*/,
@@ -193,7 +193,7 @@ class JournalMore extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Color.fromRGBO(0, 0, 0, 1),
-                            fontFamily: 'Noto Sans',
+
                             fontSize: 45,
                             letterSpacing:
                                 0 /*percentages not used in flutter. defaulting to zero*/,

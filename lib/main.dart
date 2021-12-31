@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:syalo_app/initial_page.dart';
 
+import 'OnBoardingScreens/screen1.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -14,9 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'Circular',
         primarySwatch: Colors.blue,
       ),
-      home: InitialPage(),
+      home: Screen1(),
     );
   }
 }

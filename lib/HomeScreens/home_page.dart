@@ -211,7 +211,7 @@ class _HomePageState extends State<HomePage> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Color.fromRGBO(0, 0, 0, 1),
-                              fontFamily: 'Open Sans',
+
                               fontSize: 35,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,
@@ -322,7 +322,7 @@ class _HomePageState extends State<HomePage> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Color.fromRGBO(255, 255, 255, 1),
-                                      fontFamily: 'Open Sans',
+
                                       fontSize: 35,
                                       letterSpacing:
                                           0 /*percentages not used in flutter. defaulting to zero*/,
@@ -344,7 +344,7 @@ class _HomePageState extends State<HomePage> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Color.fromRGBO(0, 0, 0, 1),
-                              fontFamily: 'Open Sans',
+
                               fontSize: 35,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,
@@ -455,7 +455,7 @@ class _HomePageState extends State<HomePage> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Color.fromRGBO(255, 255, 255, 1),
-                                      fontFamily: 'Open Sans',
+
                                       fontSize: 35,
                                       letterSpacing:
                                           0 /*percentages not used in flutter. defaulting to zero*/,
@@ -510,7 +510,7 @@ class _HomePageState extends State<HomePage> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Color.fromRGBO(255, 255, 255, 1),
-                                      fontFamily: 'Open Sans',
+
                                       fontSize: 35,
                                       letterSpacing:
                                           0 /*percentages not used in flutter. defaulting to zero*/,
@@ -565,7 +565,7 @@ class _HomePageState extends State<HomePage> {
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         color: Color.fromRGBO(255, 255, 255, 1),
-                                        fontFamily: 'Open Sans',
+
                                         fontSize: 35,
                                         letterSpacing:
                                             0 /*percentages not used in flutter. defaulting to zero*/,
@@ -588,7 +588,7 @@ class _HomePageState extends State<HomePage> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Color.fromRGBO(0, 0, 0, 1),
-                              fontFamily: 'Open Sans',
+
                               fontSize: 35,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,

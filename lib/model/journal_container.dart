@@ -19,7 +19,7 @@ class JournalContainer extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
                 color: Color.fromRGBO(0, 0, 0, 1),
-                fontFamily: 'Noto Sans',
+
                 fontSize: 15,
                 letterSpacing:
                     0 /*percentages not used in flutter. defaulting to zero*/,
@@ -52,7 +52,7 @@ class JournalContainer extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromRGBO(0, 0, 0, 1),
-                        fontFamily: 'Open Sans',
+
                         fontSize: 22,
                         letterSpacing:
                             0 /*percentages not used in flutter. defaulting to zero*/,
@@ -65,7 +65,7 @@ class JournalContainer extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Color.fromRGBO(0, 0, 0, 1),
-                        fontFamily: 'Open Sans',
+
                         fontSize: 15,
                         letterSpacing:
                             0 /*percentages not used in flutter. defaulting to zero*/,

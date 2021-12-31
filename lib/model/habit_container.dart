@@ -40,7 +40,7 @@ class HabitContainer extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     color: Color.fromRGBO(255, 255, 255, 1),
-                    fontFamily: 'Open Sans',
+
                     fontSize: 20,
                     letterSpacing:
                         0 /*percentages not used in flutter. defaulting to zero*/,

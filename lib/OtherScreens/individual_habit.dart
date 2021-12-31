@@ -40,7 +40,7 @@ class IndividualHabit extends StatelessWidget {
                             textAlign: TextAlign.center,
                             style: TextStyle(
                                 color: Color.fromRGBO(0, 0, 0, 1),
-                                fontFamily: 'Noto Sans',
+
                                 fontSize: 33,
                                 letterSpacing:
                                     0 /*percentages not used in flutter. defaulting to zero*/,
@@ -54,7 +54,7 @@ class IndividualHabit extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Color.fromRGBO(0, 0, 0, 1),
-                              fontFamily: 'Open Sans',
+
                               fontSize: 25,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,
@@ -90,7 +90,7 @@ class IndividualHabit extends StatelessWidget {
                                       style: TextStyle(
                                           color:
                                               Color.fromRGBO(255, 255, 255, 1),
-                                          fontFamily: 'Open Sans',
+
                                           fontSize: 25,
                                           letterSpacing:
                                               0 /*percentages not used in flutter. defaulting to zero*/,
@@ -103,7 +103,7 @@ class IndividualHabit extends StatelessWidget {
                                       style: TextStyle(
                                           color:
                                               Color.fromRGBO(255, 255, 255, 1),
-                                          fontFamily: 'Open Sans',
+
                                           fontSize: 20,
                                           letterSpacing:
                                               0 /*percentages not used in flutter. defaulting to zero*/,
@@ -143,7 +143,7 @@ class IndividualHabit extends StatelessWidget {
                                             style: TextStyle(
                                                 color:
                                                     Color.fromRGBO(0, 0, 0, 1),
-                                                fontFamily: 'Open Sans',
+
                                                 fontSize: 25,
                                                 letterSpacing:
                                                     0 /*percentages not used in flutter. defaulting to zero*/,
@@ -156,7 +156,7 @@ class IndividualHabit extends StatelessWidget {
                                             style: TextStyle(
                                                 color:
                                                     Color.fromRGBO(0, 0, 0, 1),
-                                                fontFamily: 'Open Sans',
+
                                                 fontSize: 25,
                                                 letterSpacing:
                                                     0 /*percentages not used in flutter. defaulting to zero*/,
@@ -179,7 +179,7 @@ class IndividualHabit extends StatelessWidget {
                                             style: TextStyle(
                                                 color:
                                                     Color.fromRGBO(0, 0, 0, 1),
-                                                fontFamily: 'Open Sans',
+
                                                 fontSize: 30,
                                                 letterSpacing:
                                                     0 /*percentages not used in flutter. defaulting to zero*/,
@@ -229,7 +229,7 @@ class IndividualHabit extends StatelessWidget {
                                       style: TextStyle(
                                           color:
                                               Color.fromRGBO(255, 255, 255, 1),
-                                          fontFamily: 'Open Sans',
+
                                           fontSize: 25,
                                           letterSpacing:
                                               0 /*percentages not used in flutter. defaulting to zero*/,
@@ -242,7 +242,7 @@ class IndividualHabit extends StatelessWidget {
                                       style: TextStyle(
                                           color:
                                               Color.fromRGBO(255, 255, 255, 1),
-                                          fontFamily: 'Open Sans',
+
                                           fontSize: 20,
                                           letterSpacing:
                                               0 /*percentages not used in flutter. defaulting to zero*/,
@@ -282,7 +282,7 @@ class IndividualHabit extends StatelessWidget {
                                             style: TextStyle(
                                                 color:
                                                     Color.fromRGBO(0, 0, 0, 1),
-                                                fontFamily: 'Open Sans',
+
                                                 fontSize: 25,
                                                 letterSpacing:
                                                     0 /*percentages not used in flutter. defaulting to zero*/,
@@ -295,7 +295,7 @@ class IndividualHabit extends StatelessWidget {
                                             style: TextStyle(
                                                 color:
                                                     Color.fromRGBO(0, 0, 0, 1),
-                                                fontFamily: 'Open Sans',
+
                                                 fontSize: 25,
                                                 letterSpacing:
                                                     0 /*percentages not used in flutter. defaulting to zero*/,
@@ -318,7 +318,7 @@ class IndividualHabit extends StatelessWidget {
                                             style: TextStyle(
                                                 color:
                                                     Color.fromRGBO(0, 0, 0, 1),
-                                                fontFamily: 'Open Sans',
+
                                                 fontSize: 30,
                                                 letterSpacing:
                                                     0 /*percentages not used in flutter. defaulting to zero*/,
@@ -370,7 +370,7 @@ class IndividualHabit extends StatelessWidget {
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   color: Color.fromRGBO(0, 0, 0, 1),
-                                  fontFamily: 'Noto Sans',
+
                                   fontSize: 45,
                                   letterSpacing:
                                       0 /*percentages not used in flutter. defaulting to zero*/,

@@ -40,7 +40,6 @@ class DrawerButton extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(
                 color: Color.fromRGBO(255, 255, 255, 1),
-                fontFamily: 'Open Sans',
                 fontSize: 22,
                 letterSpacing:
                     0 /*percentages not used in flutter. defaulting to zero*/,
