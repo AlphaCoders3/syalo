@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:syalo_app/DrawerScreens/chat_page.dart';
+import 'package:syalo_app/DrawerScreens/favourites.dart';
 import 'package:syalo_app/DrawerScreens/habits_main.dart';
 import 'package:syalo_app/DrawerScreens/journal_main.dart';
+import 'package:syalo_app/OtherScreens/search_results.dart';
 import 'package:syalo_app/model/drawer_button.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -54,8 +57,19 @@ class AppDrawer extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  DrawerButton(
-                      text: 'Appointment', icon: Icons.calendar_today_outlined),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ChatPage(),
+                        ),
+                      );
+                    },
+                    child: DrawerButton(
+                        text: 'Appointment',
+                        icon: Icons.calendar_today_outlined),
+                  ),
                   InkWell(
                     onTap: () {
                       Navigator.push(
@@ -79,8 +93,28 @@ class AppDrawer extends StatelessWidget {
                       },
                       child: DrawerButton(
                           text: 'Journal', icon: Icons.book_sharp)),
-                  DrawerButton(text: 'Favourites', icon: Icons.favorite),
-                  DrawerButton(text: 'Settings', icon: Icons.settings),
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Favourite(),
+                          ),
+                        );
+                      },
+                      child: DrawerButton(
+                          text: 'Favourites', icon: Icons.favorite)),
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SearchResult(),
+                          ),
+                        );
+                      },
+                      child:
+                          DrawerButton(text: 'Settings', icon: Icons.settings)),
                   DrawerButton(
                       text: 'Payment & Cash', icon: Icons.monetization_on),
                 ],

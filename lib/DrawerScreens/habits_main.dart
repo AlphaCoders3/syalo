@@ -1,9 +1,10 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:syalo_app/DrawerScreens/habits_friends.dart';
-import 'package:syalo_app/DrawerScreens/habits_habits.dart';
-import 'package:syalo_app/DrawerScreens/journal_entry.dart';
+import 'package:syalo_app/OtherScreens/habits_friends.dart';
+import 'package:syalo_app/OtherScreens/habits_habits.dart';
+import 'package:syalo_app/OtherScreens/journal_entry.dart';
+import 'package:syalo_app/OtherScreens/new_habit.dart';
 
 class HabitsMain extends StatefulWidget {
   const HabitsMain({Key? key}) : super(key: key);
@@ -299,10 +300,20 @@ class _HabitsMainState extends State<HabitsMain> {
                               ),
                             ],
                           ),
-                          Icon(
-                            Icons.add,
-                            color: Colors.black,
-                            size: 45,
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => NewHabit(),
+                                ),
+                              );
+                            },
+                            child: Icon(
+                              Icons.add,
+                              color: Colors.black,
+                              size: 45,
+                            ),
                           ),
                         ],
                       ),

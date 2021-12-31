@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:syalo_app/DrawerScreens/journal_entry.dart';
-import 'package:syalo_app/DrawerScreens/journal_more.dart';
+import 'package:syalo_app/OtherScreens/journal_entry.dart';
+import 'package:syalo_app/OtherScreens/journal_more.dart';
 import 'package:syalo_app/model/journal_container.dart';
 
 class JournalMain extends StatelessWidget {

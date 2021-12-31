@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:syalo_app/DrawerScreens/individual_habit.dart';
+import 'package:syalo_app/OtherScreens/individual_habit.dart';
 
 class HabitContainer extends StatelessWidget {
   const HabitContainer({Key? key, required this.color}) : super(key: key);
