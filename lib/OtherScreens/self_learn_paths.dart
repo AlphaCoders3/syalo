@@ -20,8 +20,7 @@ class SelfLearn extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                AppHeader2(),
-                SizedBox(height: 65),
+                SizedBox(height: 90),
                 Padding(
                   padding: const EdgeInsets.only(left: 32.0),
                   child: Text(

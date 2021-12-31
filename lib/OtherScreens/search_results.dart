@@ -18,8 +18,7 @@ class SearchResult extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: [
-                AppHeader(),
-                SizedBox(height: 60),
+                SizedBox(height: 90),
                 SearchField(
                   searchWord: 'search term',
                 ),

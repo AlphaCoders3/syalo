@@ -74,7 +74,7 @@ class _InitialPageState extends State<InitialPage> {
                                   Text(
                                     'Home',
                                     style: TextStyle(
-                                        color: Colors.grey, fontSize: 14),
+                                        color: Colors.grey, fontSize: 10),
                                   ),
                                 ],
                               ),
@@ -90,7 +90,7 @@ class _InitialPageState extends State<InitialPage> {
                                   Text(
                                     'Consult',
                                     style: TextStyle(
-                                        color: Colors.grey, fontSize: 14),
+                                        color: Colors.grey, fontSize: 10),
                                   ),
                                 ],
                               ),
@@ -106,7 +106,7 @@ class _InitialPageState extends State<InitialPage> {
                                   Text(
                                     'Path',
                                     style: TextStyle(
-                                        color: Colors.grey, fontSize: 14),
+                                        color: Colors.grey, fontSize: 10),
                                   ),
                                 ],
                               ),
@@ -122,7 +122,7 @@ class _InitialPageState extends State<InitialPage> {
                                   Text(
                                     'People',
                                     style: TextStyle(
-                                        color: Colors.grey, fontSize: 14),
+                                        color: Colors.grey, fontSize: 10),
                                   ),
                                 ],
                               ),
@@ -138,7 +138,7 @@ class _InitialPageState extends State<InitialPage> {
                                   Text(
                                     'Me',
                                     style: TextStyle(
-                                        color: Colors.grey, fontSize: 14),
+                                        color: Colors.grey, fontSize: 10),
                                   ),
                                 ],
                               ),

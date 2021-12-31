@@ -18,7 +18,6 @@ class Sounds extends StatelessWidget {
             physics: BouncingScrollPhysics(),
             child: Column(
               children: [
-                AppHeader2(),
                 SizedBox(height: 120),
                 Image(image: AssetImage('assets/images/meditation.png')),
                 SizedBox(height: 40),
