@@ -171,7 +171,7 @@ class _InitialPageState extends State<InitialPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Hello,Shreyas',
+                                    'Hello, Shreyas',
                                     textAlign: TextAlign.left,
                                     style: TextStyle(
                                         color: Color.fromRGBO(0, 0, 0, 1),
