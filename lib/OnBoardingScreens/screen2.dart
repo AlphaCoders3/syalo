@@ -35,7 +35,7 @@ class Screen2 extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 29.0,
+                height: 15.0,
               ),
               Container(
                 child: Text(
@@ -47,7 +47,7 @@ class Screen2 extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 93,
+                height: 70,
               ),
               Container(
                 child: Image(
@@ -57,7 +57,7 @@ class Screen2 extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 6,
+                height: 50,
               ),
               GestureDetector(
                 onTap: () {

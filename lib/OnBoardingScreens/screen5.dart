@@ -37,7 +37,7 @@ class Screen5 extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(top: 50),
+                        padding: EdgeInsets.only(top: 30),
                         child: Center(
                           child: Text(
                             'Sounds',
@@ -49,7 +49,7 @@ class Screen5 extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 40,
+                        height: 50,
                       ),
                       Container(
                         padding: EdgeInsets.only(right: 130, top: 7),
@@ -91,7 +91,7 @@ class Screen5 extends StatelessWidget {
             ),
             Positioned(
               left: MediaQuery.of(context).size.width / (2) - 114,
-              bottom: 25,
+              bottom: 30,
               child: Hero(
                 tag: 'next',
                 child: GestureDetector(

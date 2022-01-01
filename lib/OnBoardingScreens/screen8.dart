@@ -40,7 +40,7 @@ class Screen8 extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(top: 25, right: 26),
+                        padding: EdgeInsets.only(top: 20, right: 26),
                         child: Center(
                           child: Text(
                             'Building in INDIA',
@@ -90,7 +90,7 @@ class Screen8 extends StatelessWidget {
             ),
             Positioned(
               left: MediaQuery.of(context).size.width / (2) - 114,
-              bottom: 25,
+              bottom: 30,
               child: Hero(
                 tag: 'next',
                 child: GestureDetector(

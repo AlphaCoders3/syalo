@@ -40,7 +40,7 @@ class Screen3 extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(left: 35, top: 50),
+                        padding: EdgeInsets.only(left: 35, top: 30),
                         child: Text(
                           'Friends that Grow Together,\nStay Together',
                           style: GoogleFonts.getFont('Montserrat').copyWith(
@@ -50,7 +50,7 @@ class Screen3 extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 40,
+                        height: 60,
                       ),
                       Container(
                         child: Image(
@@ -89,7 +89,7 @@ class Screen3 extends StatelessWidget {
             ),
             Positioned(
               left: MediaQuery.of(context).size.width / (2) - 114,
-              bottom: 25,
+              bottom: 30,
               child: Hero(
                 tag: 'next',
                 child: GestureDetector(

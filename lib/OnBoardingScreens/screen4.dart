@@ -37,7 +37,7 @@ class Screen4 extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(top: 55),
+                        padding: EdgeInsets.only(top: 30),
                         child: Center(
                           child: Text(
                             'Let It Out!',
@@ -91,7 +91,7 @@ class Screen4 extends StatelessWidget {
             ),
             Positioned(
               left: MediaQuery.of(context).size.width / (2) - 114,
-              bottom: 25,
+              bottom: 30,
               child: Hero(
                 tag: 'next',
                 child: GestureDetector(
