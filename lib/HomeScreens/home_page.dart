@@ -211,7 +211,6 @@ class _HomePageState extends State<HomePage> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Color.fromRGBO(0, 0, 0, 1),
-
                               fontSize: 35,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,
@@ -223,7 +222,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Container(
-                                width: 110,
+                                width: MediaQuery.of(context).size.width * .27,
                                 height: 125,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
@@ -241,7 +240,7 @@ class _HomePageState extends State<HomePage> {
                                   color: Color.fromRGBO(255, 255, 255, 1),
                                 )),
                             Container(
-                                width: 110,
+                                width: MediaQuery.of(context).size.width * .27,
                                 height: 125,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
@@ -259,7 +258,7 @@ class _HomePageState extends State<HomePage> {
                                   color: Color.fromRGBO(255, 255, 255, 1),
                                 )),
                             Container(
-                                width: 110,
+                                width: MediaQuery.of(context).size.width * .27,
                                 height: 125,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
@@ -322,7 +321,6 @@ class _HomePageState extends State<HomePage> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Color.fromRGBO(255, 255, 255, 1),
-
                                       fontSize: 35,
                                       letterSpacing:
                                           0 /*percentages not used in flutter. defaulting to zero*/,
@@ -344,7 +342,6 @@ class _HomePageState extends State<HomePage> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Color.fromRGBO(0, 0, 0, 1),
-
                               fontSize: 35,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,
@@ -356,7 +353,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Container(
-                                width: 110,
+                                width: MediaQuery.of(context).size.width * .27,
                                 height: 125,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
@@ -374,7 +371,7 @@ class _HomePageState extends State<HomePage> {
                                   color: Color.fromRGBO(255, 255, 255, 1),
                                 )),
                             Container(
-                                width: 110,
+                                width: MediaQuery.of(context).size.width * .27,
                                 height: 125,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
@@ -392,7 +389,7 @@ class _HomePageState extends State<HomePage> {
                                   color: Color.fromRGBO(255, 255, 255, 1),
                                 )),
                             Container(
-                                width: 110,
+                                width: MediaQuery.of(context).size.width * .27,
                                 height: 125,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
@@ -427,7 +424,7 @@ class _HomePageState extends State<HomePage> {
                               bottomLeft: Radius.circular(25),
                               bottomRight: Radius.circular(25),
                             ),
-                            color: Color.fromRGBO(12, 90, 255, 1),
+                            color: Color(0xffFF6F00),
                           ),
                           child: Column(
                             children: [
@@ -455,7 +452,6 @@ class _HomePageState extends State<HomePage> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Color.fromRGBO(255, 255, 255, 1),
-
                                       fontSize: 35,
                                       letterSpacing:
                                           0 /*percentages not used in flutter. defaulting to zero*/,
@@ -482,7 +478,7 @@ class _HomePageState extends State<HomePage> {
                               bottomLeft: Radius.circular(25),
                               bottomRight: Radius.circular(25),
                             ),
-                            color: Color.fromRGBO(12, 90, 255, 1),
+                            color: Color(0xffE00A2F),
                           ),
                           child: Column(
                             children: [
@@ -510,7 +506,6 @@ class _HomePageState extends State<HomePage> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Color.fromRGBO(255, 255, 255, 1),
-
                                       fontSize: 35,
                                       letterSpacing:
                                           0 /*percentages not used in flutter. defaulting to zero*/,
@@ -537,7 +532,7 @@ class _HomePageState extends State<HomePage> {
                               bottomLeft: Radius.circular(25),
                               bottomRight: Radius.circular(25),
                             ),
-                            color: Color.fromRGBO(12, 90, 255, 1),
+                            color: Color(0xff850A88),
                           ),
                           child: Column(
                             children: [
@@ -565,7 +560,6 @@ class _HomePageState extends State<HomePage> {
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         color: Color.fromRGBO(255, 255, 255, 1),
-
                                         fontSize: 35,
                                         letterSpacing:
                                             0 /*percentages not used in flutter. defaulting to zero*/,
@@ -588,7 +582,6 @@ class _HomePageState extends State<HomePage> {
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Color.fromRGBO(0, 0, 0, 1),
-
                               fontSize: 35,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,
@@ -600,7 +593,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Container(
-                                width: 110,
+                                width: MediaQuery.of(context).size.width * .27,
                                 height: 125,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
@@ -618,7 +611,7 @@ class _HomePageState extends State<HomePage> {
                                   color: Color.fromRGBO(255, 255, 255, 1),
                                 )),
                             Container(
-                                width: 110,
+                                width: MediaQuery.of(context).size.width * .27,
                                 height: 125,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
@@ -636,7 +629,7 @@ class _HomePageState extends State<HomePage> {
                                   color: Color.fromRGBO(255, 255, 255, 1),
                                 )),
                             Container(
-                                width: 110,
+                                width: MediaQuery.of(context).size.width * .27,
                                 height: 125,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(

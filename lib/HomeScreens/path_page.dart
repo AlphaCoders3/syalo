@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:syalo_app/OtherScreens/request_learning_path.dart';
+import 'package:syalo_app/OtherScreens/search_results.dart';
 import 'package:syalo_app/OtherScreens/search_suggestions.dart';
 import 'package:syalo_app/OtherScreens/self_learn_paths.dart';
 import 'package:syalo_app/OtherScreens/sounds.dart';
@@ -104,7 +105,12 @@ class PathPage extends StatelessWidget {
                           );
                         },
                         child: EmptyBox()),
-                    EmptyBox(),
+                    InkWell(onTap: (){ Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SearchResult(),
+                      ),
+                    );}, child: EmptyBox()),
                   ],
                 ),
                 SizedBox(height: 55),

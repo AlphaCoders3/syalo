@@ -104,12 +104,6 @@ class AppDrawer extends StatelessWidget {
                           text: 'Favourites', icon: Icons.favorite)),
                   InkWell(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => SearchResult(),
-                          ),
-                        );
                       },
                       child:
                           DrawerButton(text: 'Settings', icon: Icons.settings)),

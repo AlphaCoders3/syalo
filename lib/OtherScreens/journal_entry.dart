@@ -51,7 +51,6 @@ class JournalEntry extends StatelessWidget {
                                       style: TextStyle(
                                           color:
                                               Color.fromRGBO(255, 255, 255, 1),
-
                                           fontSize: 25,
                                           letterSpacing:
                                               0 /*percentages not used in flutter. defaulting to zero*/,
@@ -64,7 +63,6 @@ class JournalEntry extends StatelessWidget {
                                       style: TextStyle(
                                           color:
                                               Color.fromRGBO(255, 255, 255, 1),
-
                                           fontSize: 18,
                                           letterSpacing:
                                               0 /*percentages not used in flutter. defaulting to zero*/,
@@ -76,7 +74,7 @@ class JournalEntry extends StatelessWidget {
                               ),
                               SizedBox(height: 10),
                               Container(
-                                width: 328,
+                                padding: EdgeInsets.symmetric(horizontal: 20),
                                 height: 70,
                                 child: TextField(
                                   maxLines: 5,
@@ -118,7 +116,6 @@ class JournalEntry extends StatelessWidget {
                                       style: TextStyle(
                                           color:
                                               Color.fromRGBO(255, 255, 255, 1),
-
                                           fontSize: 25,
                                           letterSpacing:
                                               0 /*percentages not used in flutter. defaulting to zero*/,
@@ -135,7 +132,7 @@ class JournalEntry extends StatelessWidget {
                               ),
                               SizedBox(height: 10),
                               Container(
-                                width: 328,
+                                padding: EdgeInsets.all(20),
                                 height: 300,
                                 child: TextField(
                                   maxLines: 10,
@@ -195,7 +192,6 @@ class JournalEntry extends StatelessWidget {
                                           style: TextStyle(
                                               color:
                                                   Color.fromRGBO(48, 48, 48, 1),
-
                                               fontSize: 20,
                                               letterSpacing:
                                                   0 /*percentages not used in flutter. defaulting to zero*/,
@@ -235,7 +231,6 @@ class JournalEntry extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Color.fromRGBO(0, 0, 0, 1),
-
                             fontSize: 45,
                             letterSpacing:
                                 0 /*percentages not used in flutter. defaulting to zero*/,
