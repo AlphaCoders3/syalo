@@ -17,84 +17,100 @@ class Screen6 extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFFffffff),
-        body: SingleChildScrollView(
-          child: Center(
-            child: Column(
-              children: [
-                Container(
-                  padding: EdgeInsets.only(left: 35.0, right: 180, top: 35.0),
-                  child: Text(
-                    'Hi, Shreyas',
-                    style: GoogleFonts.getFont('Montserrat').copyWith(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 30.0,
-                        color: Color(0xFF000000)),
+        body: Stack(
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height,
+              child: SingleChildScrollView(
+                child: Center(
+                  child: Column(
+                    children: [
+                      Container(
+                        padding:
+                            EdgeInsets.only(left: 35.0, right: 180, top: 35.0),
+                        child: Text(
+                          'Hi, Shreyas',
+                          style: GoogleFonts.getFont('Montserrat').copyWith(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 30.0,
+                              color: Color(0xFF000000)),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(top: 50),
+                        child: Center(
+                          child: Text(
+                            'Learning Paths',
+                            style: GoogleFonts.getFont('Montserrat').copyWith(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 35.0,
+                                color: Color(0xFF000000)),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 40,
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(right: 130, top: 7),
+                        child: Text(
+                          'Deal With your',
+                          style: GoogleFonts.getFont('Montserrat').copyWith(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 25.0,
+                              color: Color(0xFF0081FF)),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 45, top: 5),
+                        child: Text(
+                          'PROBLEMS',
+                          style: GoogleFonts.getFont('Montserrat').copyWith(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 34.0,
+                              color: Color(0xFF0081FF)),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 200, top: 5),
+                        child: Text(
+                          'Like a Boss!',
+                          style: GoogleFonts.getFont('Montserrat').copyWith(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 28.0,
+                              color: Color(0xFF0081FF)),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 25,
+                      ),
+                      Container(
+                        child: Image(
+                          colorBlendMode: BlendMode.overlay,
+                          image: AssetImage(
+                              'assets/images/undraw_solution_mindset_34bi 1.png'),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 45,
+                      ),
+                    ],
                   ),
                 ),
-                Container(
-                  padding: EdgeInsets.only(top: 50),
-                  child: Center(
-                    child: Text(
-                      'Learning Paths',
-                      style: GoogleFonts.getFont('Montserrat').copyWith(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 35.0,
-                          color: Color(0xFF000000)),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 40,
-                ),
-                Container(
-                  padding: EdgeInsets.only(right: 130, top: 7),
-                  child: Text(
-                    'Deal With your',
-                    style: GoogleFonts.getFont('Montserrat').copyWith(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 25.0,
-                        color: Color(0xFF0081FF)),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.only(left: 45, top: 5),
-                  child: Text(
-                    'PROBLEMS',
-                    style: GoogleFonts.getFont('Montserrat').copyWith(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 34.0,
-                        color: Color(0xFF0081FF)),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.only(left: 200, top: 5),
-                  child: Text(
-                    'Like a Boss!',
-                    style: GoogleFonts.getFont('Montserrat').copyWith(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 28.0,
-                        color: Color(0xFF0081FF)),
-                  ),
-                ),
-                SizedBox(
-                  height: 25,
-                ),
-                Container(
-                  child: Image(
-                    colorBlendMode: BlendMode.overlay,
-                    image:
-                        AssetImage('assets/images/undraw_solution_mindset_34bi 1.png'),
-                  ),
-                ),
-                SizedBox(
-                  height: 45,
-                ),
-                GestureDetector(
+              ),
+            ),
+            Positioned(
+              left: MediaQuery.of(context).size.width / (2) - 114,
+              bottom: 25,
+              child: Hero(
+                tag: 'next',
+                child: GestureDetector(
                   onTap: () {
                     Navigator.push(
                         context,
                         PageTransition(
-                            type: PageTransitionType.rightToLeft,
+                            type: PageTransitionType.fade,
+                            duration: Duration(seconds: 1),
                             child: Screen7()));
                   },
                   child: Container(
@@ -116,15 +132,17 @@ class Screen6 extends StatelessWidget {
                         child: Text(
                           'Next',
                           style: TextStyle(
+                              fontFamily: 'Circular',
+                              decoration: TextDecoration.none,
                               color: Color(0xFFFFFFFF),
                               fontWeight: FontWeight.w500,
                               fontSize: 25.0),
                         ),
                       )),
                 ),
-              ],
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );

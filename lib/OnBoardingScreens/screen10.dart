@@ -221,7 +221,7 @@ class Screen10 extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 PageTransition(
-                                    type: PageTransitionType.rightToLeft,
+                                    type: PageTransitionType.fade,
                                     child: Screen11()));
                           },
                           child: Container(

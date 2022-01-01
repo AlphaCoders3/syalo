@@ -17,70 +17,89 @@ class Screen8 extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFFffffff),
-        body: SingleChildScrollView(
-          child: Center(
-            child: Column(
-              children: [
-                Container(
-                  padding: EdgeInsets.only(left: 35.0, right: 180, top: 25.0),
-                  child: Text(
-                    'Hi, Shreyas',
-                    style: GoogleFonts.getFont('Montserrat').copyWith(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 30.0,
-                        color: Color(0xFF000000)),
+        body: Stack(
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height,
+              child: SingleChildScrollView(
+                child: Center(
+                  child: Column(
+                    children: [
+                      Hero(
+                        tag: 'next',
+                        child: Container(
+                          padding: EdgeInsets.only(
+                              left: 35.0, right: 180, top: 25.0),
+                          child: Text(
+                            'Hi, Shreyas',
+                            style: GoogleFonts.getFont('Montserrat').copyWith(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 30.0,
+                                color: Color(0xFF000000)),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(top: 25, right: 26),
+                        child: Center(
+                          child: Text(
+                            'Building in INDIA',
+                            style: GoogleFonts.getFont('Montserrat').copyWith(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 35.0,
+                                color: Color(0xFF000000)),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 160, right: 10),
+                        child: Text(
+                          'For the World',
+                          style: GoogleFonts.getFont('Montserrat').copyWith(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 32.0,
+                              color: Color(0xFF0081FF)),
+                        ),
+                      ),
+                      Container(
+                        child: Image(
+                          colorBlendMode: BlendMode.overlay,
+                          image: AssetImage(
+                              'assets/images/undraw_Team_collaboration_re_ow29 1.png'),
+                        ),
+                      ),
+                      Container(
+                        width: 386,
+                        height: 241,
+                        child: Image(
+                          colorBlendMode: BlendMode.overlay,
+                          image: AssetImage(
+                              'assets/images/undraw_connected_world_wuay 1.png'),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                    ],
                   ),
                 ),
-                Container(
-                  padding: EdgeInsets.only(top: 25, right: 26),
-                  child: Center(
-                    child: Text(
-                      'Building in INDIA',
-                      style: GoogleFonts.getFont('Montserrat').copyWith(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 35.0,
-                          color: Color(0xFF000000)),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  padding: EdgeInsets.only(left: 160, right: 10),
-                  child: Text(
-                    'For the World',
-                    style: GoogleFonts.getFont('Montserrat').copyWith(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 32.0,
-                        color: Color(0xFF0081FF)),
-                  ),
-                ),
-                Container(
-                  child: Image(
-                    colorBlendMode: BlendMode.overlay,
-                    image: AssetImage(
-                        'assets/images/undraw_Team_collaboration_re_ow29 1.png'),
-                  ),
-                ),
-                Container(
-                  width: 386,
-                  height: 241,
-                  child: Image(
-                    colorBlendMode: BlendMode.overlay,
-                    image:
-                        AssetImage('assets/images/undraw_connected_world_wuay 1.png'),
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                GestureDetector(
+              ),
+            ),
+            Positioned(
+              left: MediaQuery.of(context).size.width / (2) - 114,
+              bottom: 25,
+              child: Hero(
+                tag: 'next',
+                child: GestureDetector(
                   onTap: () {
                     Navigator.push(
                         context,
                         PageTransition(
-                            type: PageTransitionType.rightToLeft,
+                            type: PageTransitionType.fade,
+                            duration: Duration(seconds: 1),
                             child: Screen9()));
                   },
                   child: Container(
@@ -102,15 +121,17 @@ class Screen8 extends StatelessWidget {
                         child: Text(
                           'Next',
                           style: TextStyle(
+                              fontFamily: 'Circular',
+                              decoration: TextDecoration.none,
                               color: Color(0xFFFFFFFF),
                               fontWeight: FontWeight.w500,
                               fontSize: 25.0),
                         ),
                       )),
                 ),
-              ],
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );

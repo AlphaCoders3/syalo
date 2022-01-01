@@ -23,7 +23,7 @@ class _Screen12State extends State<Screen12> {
     Timer(Duration(seconds: 6), () {
       Navigator.pushReplacement(
         context,
-        PageTransition(type: PageTransitionType.rightToLeft, child: InitialPage()),
+        PageTransition(type: PageTransitionType.fade, child: InitialPage()),
       );
     });
     super.initState();
@@ -95,15 +95,17 @@ class _Screen12State extends State<Screen12> {
                   ),
                 ),
                 SizedBox(
-                  height: 60,
+                  height: 50,
                 ),
                 Container(
                   child: Image(
                     colorBlendMode: BlendMode.overlay,
-                    image:
-                        AssetImage('assets/images/undraw_young_and_happy_hfpe 1.png'),
+                    image: AssetImage(
+                        'assets/images/undraw_young_and_happy_hfpe 1.png'),
                   ),
                 ),
+                SizedBox(height: 15),
+                Center(child: CircularProgressIndicator()),
               ],
             ),
           ),

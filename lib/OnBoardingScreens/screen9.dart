@@ -75,44 +75,49 @@ class Screen9 extends StatelessWidget {
                 Container(
                   child: Image(
                     colorBlendMode: BlendMode.overlay,
-                    image: AssetImage('assets/images/undraw_snow_games_ohkc 2.png'),
+                    image: AssetImage(
+                        'assets/images/undraw_snow_games_ohkc 2.png'),
                   ),
                 ),
                 SizedBox(
                   height: 45,
                 ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        PageTransition(
-                            type: PageTransitionType.rightToLeft,
-                            child: Screen10()));
-                  },
-                  child: Container(
-                      width: 328.0,
-                      height: 65.0,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFCD1010),
-                        borderRadius: BorderRadius.circular(25.0),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color(0xFF000000),
-                            spreadRadius: 2,
-                            blurRadius: 7,
-                            offset: Offset(0, 3), // changes position of shadow
-                          )
-                        ],
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Woohoo! I’m In!',
-                          style: TextStyle(
-                              color: Color(0xFFFFFFFF),
-                              fontWeight: FontWeight.w500,
-                              fontSize: 25.0),
+                Hero(
+                  tag: 'next',
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          PageTransition(
+                              type: PageTransitionType.fade,
+                              child: Screen10()));
+                    },
+                    child: Container(
+                        width: 328.0,
+                        height: 65.0,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFCD1010),
+                          borderRadius: BorderRadius.circular(25.0),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color(0xFF000000),
+                              spreadRadius: 2,
+                              blurRadius: 7,
+                              offset:
+                                  Offset(0, 3), // changes position of shadow
+                            )
+                          ],
                         ),
-                      )),
+                        child: Center(
+                          child: Text(
+                            'Woohoo! I’m In!',
+                            style: TextStyle(
+                                color: Color(0xFFFFFFFF),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 25.0),
+                          ),
+                        )),
+                  ),
                 ),
               ],
             ),

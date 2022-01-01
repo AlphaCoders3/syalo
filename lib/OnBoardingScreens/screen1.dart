@@ -69,8 +69,7 @@ class Screen1 extends StatelessWidget {
                   Navigator.push(
                       context,
                       PageTransition(
-                          type: PageTransitionType.rightToLeft,
-                          child: Screen2()));
+                          type: PageTransitionType.fade, child: Screen2()));
                 },
                 child: Container(
                     width: 328.0,
