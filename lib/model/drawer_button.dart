@@ -29,12 +29,14 @@ class DrawerButton extends StatelessWidget {
         color: Color.fromRGBO(0, 129, 255, 1),
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
+          SizedBox(width: 16),
           Icon(
             icon,
             color: Colors.white,
           ),
+          SizedBox(width: 10),
           Text(
             '${text}',
             textAlign: TextAlign.center,

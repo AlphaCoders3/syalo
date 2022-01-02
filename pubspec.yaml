@@ -33,10 +33,10 @@ flutter:
      - assets/images/
 
   fonts:
-    - family: Circular
+    - family: Montserrat
       fonts:
-        - asset: assets/fonts/CircularStd-Medium.ttf
-        - asset: assets/fonts/CircularAir-Light.ttf
+        - asset: assets/fonts/Montserrat-Medium.ttf
+        - asset: assets/fonts/Montserrat-Light.ttf
           weight: 100
-        - asset: assets/fonts/CircularStd-Bold.ttf
+        - asset: assets/fonts/Montserrat-Bold.ttf
           weight: 500
