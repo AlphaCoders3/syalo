@@ -65,7 +65,7 @@ class Screen1 extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                     context,
                     PageTransition(
                         type: PageTransitionType.fade, child: Screen2()));

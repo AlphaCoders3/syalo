@@ -6,7 +6,8 @@ class JournalEntry extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    TextEditingController message = TextEditingController();
+    TextEditingController message1 = TextEditingController();
+    TextEditingController message2 = TextEditingController();
 
     return SafeArea(
       child: Scaffold(
@@ -74,8 +75,23 @@ class JournalEntry extends StatelessWidget {
                               ),
                               SizedBox(height: 10),
                               Container(
-                                padding: EdgeInsets.symmetric(horizontal: 20),
+                                margin: EdgeInsets.symmetric(horizontal: 20),
                                 height: 70,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(25),
+                                    topRight: Radius.circular(25),
+                                    bottomLeft: Radius.circular(25),
+                                    bottomRight: Radius.circular(25),
+                                  ),
+                                  gradient: LinearGradient(
+                                      begin: Alignment(1, 0),
+                                      end: Alignment(0, 1),
+                                      colors: [
+                                        Color.fromRGBO(253, 251, 251, 1),
+                                        Color.fromRGBO(235, 237, 238, 1)
+                                      ]),
+                                ),
                                 child: TextField(
                                   maxLines: 5,
                                   decoration: InputDecoration(
@@ -86,20 +102,10 @@ class JournalEntry extends StatelessWidget {
                                         right: 15),
                                     fillColor: Color(0xFFFfffff),
                                     filled: true,
-                                    focusedBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(15.0),
-                                      borderSide: BorderSide(
-                                          color: (Colors.grey), width: 5.0),
-                                    ),
-                                    enabledBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                          color: (Colors.grey), width: 5.0),
-                                      borderRadius: BorderRadius.circular(15.0),
-                                    ),
                                     hintText: 'Type the message to send...',
                                   ),
                                   keyboardType: TextInputType.text,
-                                  controller: message,
+                                  controller: message1,
                                 ),
                               ),
                               SizedBox(height: 30),
@@ -132,10 +138,25 @@ class JournalEntry extends StatelessWidget {
                               ),
                               SizedBox(height: 10),
                               Container(
-                                padding: EdgeInsets.all(20),
                                 height: 300,
+                                margin: EdgeInsets.symmetric(horizontal: 20),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(25),
+                                    topRight: Radius.circular(25),
+                                    bottomLeft: Radius.circular(25),
+                                    bottomRight: Radius.circular(25),
+                                  ),
+                                  gradient: LinearGradient(
+                                      begin: Alignment(1, 0),
+                                      end: Alignment(0, 1),
+                                      colors: [
+                                        Color.fromRGBO(253, 251, 251, 1),
+                                        Color.fromRGBO(235, 237, 238, 1)
+                                      ]),
+                                ),
                                 child: TextField(
-                                  maxLines: 10,
+                                  maxLines: 15,
                                   decoration: InputDecoration(
                                     contentPadding: EdgeInsets.only(
                                         left: 15,
@@ -144,20 +165,10 @@ class JournalEntry extends StatelessWidget {
                                         right: 15),
                                     fillColor: Color(0xFFFfffff),
                                     filled: true,
-                                    focusedBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(15.0),
-                                      borderSide: BorderSide(
-                                          color: (Colors.grey), width: 5.0),
-                                    ),
-                                    enabledBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                          color: (Colors.grey), width: 5.0),
-                                      borderRadius: BorderRadius.circular(15.0),
-                                    ),
                                     hintText: 'Type the message to send...',
                                   ),
                                   keyboardType: TextInputType.text,
-                                  controller: message,
+                                  controller: message2,
                                 ),
                               ),
                               SizedBox(height: 20),
@@ -222,7 +233,7 @@ class JournalEntry extends StatelessWidget {
                         child: Icon(
                           Icons.arrow_back_ios,
                           color: Colors.black,
-                          size: 45,
+                          size: 40,
                         ),
                       ),
                       SizedBox(width: 30),
@@ -231,10 +242,10 @@ class JournalEntry extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Color.fromRGBO(0, 0, 0, 1),
-                            fontSize: 45,
+                            fontSize: 40,
                             letterSpacing:
                                 0 /*percentages not used in flutter. defaulting to zero*/,
-                            fontWeight: FontWeight.normal,
+                            fontWeight: FontWeight.bold,
                             height: 1),
                       )
                     ],

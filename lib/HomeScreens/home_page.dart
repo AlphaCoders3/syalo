@@ -90,7 +90,9 @@ class _HomePageState extends State<HomePage> {
                                       Text(
                                         'Learning',
                                         textAlign: TextAlign.center,
-                                        style: TextStyle(fontSize: 17),
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w500),
                                       ),
                                     ],
                                   ),
@@ -121,7 +123,9 @@ class _HomePageState extends State<HomePage> {
                                       Text(
                                         'Meditate',
                                         textAlign: TextAlign.center,
-                                        style: TextStyle(fontSize: 17),
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w500),
                                       ),
                                     ],
                                   ),
@@ -152,7 +156,9 @@ class _HomePageState extends State<HomePage> {
                                       Text(
                                         'Consult',
                                         textAlign: TextAlign.center,
-                                        style: TextStyle(fontSize: 17),
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w500),
                                       ),
                                     ],
                                   ),
@@ -183,7 +189,9 @@ class _HomePageState extends State<HomePage> {
                                       Text(
                                         'Habits',
                                         textAlign: TextAlign.center,
-                                        style: TextStyle(fontSize: 17),
+                                        style: TextStyle(
+                                            fontSize: 17,
+                                            fontWeight: FontWeight.w500),
                                       ),
                                     ],
                                   ),
@@ -214,7 +222,7 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 35,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,
-                              fontWeight: FontWeight.normal,
+                              fontWeight: FontWeight.bold,
                               height: 1),
                         ),
                         SizedBox(height: 15),
@@ -324,7 +332,7 @@ class _HomePageState extends State<HomePage> {
                                       fontSize: 35,
                                       letterSpacing:
                                           0 /*percentages not used in flutter. defaulting to zero*/,
-                                      fontWeight: FontWeight.normal,
+                                      fontWeight: FontWeight.bold,
                                       height: 1),
                                 ),
                               ))
@@ -345,7 +353,7 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 35,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,
-                              fontWeight: FontWeight.normal,
+                              fontWeight: FontWeight.bold,
                               height: 1),
                         ),
                         SizedBox(height: 15),
@@ -455,7 +463,7 @@ class _HomePageState extends State<HomePage> {
                                       fontSize: 35,
                                       letterSpacing:
                                           0 /*percentages not used in flutter. defaulting to zero*/,
-                                      fontWeight: FontWeight.normal,
+                                      fontWeight: FontWeight.bold,
                                       height: 1),
                                 ),
                               ))
@@ -509,7 +517,7 @@ class _HomePageState extends State<HomePage> {
                                       fontSize: 35,
                                       letterSpacing:
                                           0 /*percentages not used in flutter. defaulting to zero*/,
-                                      fontWeight: FontWeight.normal,
+                                      fontWeight: FontWeight.bold,
                                       height: 1),
                                 ),
                               ))
@@ -563,7 +571,7 @@ class _HomePageState extends State<HomePage> {
                                         fontSize: 35,
                                         letterSpacing:
                                             0 /*percentages not used in flutter. defaulting to zero*/,
-                                        fontWeight: FontWeight.normal,
+                                        fontWeight: FontWeight.bold,
                                         height: 1),
                                   ),
                                 ),
@@ -585,7 +593,7 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 35,
                               letterSpacing:
                                   0 /*percentages not used in flutter. defaulting to zero*/,
-                              fontWeight: FontWeight.normal,
+                              fontWeight: FontWeight.bold,
                               height: 1),
                         ),
                         SizedBox(height: 15),

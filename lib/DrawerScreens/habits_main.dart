@@ -272,7 +272,7 @@ class _HabitsMainState extends State<HabitsMain> {
                                 child: Icon(
                                   Icons.arrow_back_ios,
                                   color: Colors.black,
-                                  size: 45,
+                                  size: 37,
                                 ),
                               ),
                               SizedBox(width: 30),
@@ -281,10 +281,10 @@ class _HabitsMainState extends State<HabitsMain> {
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     color: Color.fromRGBO(0, 0, 0, 1),
-                                    fontSize: 45,
+                                    fontSize: 37,
                                     letterSpacing:
                                         0 /*percentages not used in flutter. defaulting to zero*/,
-                                    fontWeight: FontWeight.normal,
+                                    fontWeight: FontWeight.bold,
                                     height: 1),
                               ),
                             ],
@@ -301,7 +301,7 @@ class _HabitsMainState extends State<HabitsMain> {
                             child: Icon(
                               Icons.add,
                               color: Colors.black,
-                              size: 45,
+                              size: 37,
                             ),
                           ),
                         ],

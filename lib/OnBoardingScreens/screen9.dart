@@ -97,7 +97,7 @@ class Screen9 extends StatelessWidget {
                       tag: 'next',
                       child: GestureDetector(
                         onTap: () {
-                          Navigator.push(
+                          Navigator.pushReplacement(
                               context,
                               PageTransition(
                                   type: PageTransitionType.fade,

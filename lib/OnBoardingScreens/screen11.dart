@@ -126,7 +126,7 @@ class Screen11 extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             PageTransition(
                                 type: PageTransitionType.fade,

@@ -61,7 +61,7 @@ class Screen2 extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
                     PageTransition(
                         type: PageTransitionType.fade, child: Screen3()),
@@ -112,7 +112,7 @@ class Screen2 extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
                     PageTransition(
                         type: PageTransitionType.fade, child: Screen3()),

@@ -86,15 +86,15 @@ class _GraphChartState extends State<GraphChart> {
           getTitles: (value) {
             switch (value.toInt()) {
               case 0:
-                return '-1';
-              case 1:
                 return '0';
-              case 2:
+              case 1:
                 return '10';
-              case 3:
+              case 2:
                 return '20';
-              case 4:
+              case 3:
                 return '30';
+              case 4:
+                return '40';
             }
             return '';
           },

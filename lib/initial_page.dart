@@ -178,7 +178,7 @@ class _InitialPageState extends State<InitialPage> {
                                         fontSize: 28,
                                         letterSpacing:
                                             0 /*percentages not used in flutter. defaulting to zero*/,
-                                        fontWeight: FontWeight.normal,
+                                        fontWeight: FontWeight.bold,
                                         height: 1),
                                   ),
                                   Text(
@@ -187,9 +187,10 @@ class _InitialPageState extends State<InitialPage> {
                                     style: TextStyle(
                                         color: Color.fromRGBO(0, 0, 0, 1),
                                         fontSize: 16,
+                                        fontStyle: FontStyle.italic,
                                         letterSpacing:
                                             0 /*percentages not used in flutter. defaulting to zero*/,
-                                        fontWeight: FontWeight.normal,
+                                        fontWeight: FontWeight.w500,
                                         height: 1),
                                   )
                                 ],
@@ -227,7 +228,10 @@ class _InitialPageState extends State<InitialPage> {
                                       ),
                                       Text(
                                         'Refer',
-                                        style: TextStyle(fontSize: 15),
+                                        style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w500,
+                                        ),
                                       ),
                                     ],
                                   ),

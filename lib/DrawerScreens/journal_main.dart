@@ -57,7 +57,6 @@ class JournalMain extends StatelessWidget {
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         color: Color.fromRGBO(255, 255, 255, 1),
-
                                         fontSize: 25,
                                         letterSpacing:
                                             0 /*percentages not used in flutter. defaulting to zero*/,
@@ -120,7 +119,7 @@ class JournalMain extends StatelessWidget {
                         child: Icon(
                           Icons.arrow_back_ios,
                           color: Colors.black,
-                          size: 45,
+                          size: 40,
                         ),
                       ),
                       SizedBox(width: 30),
@@ -129,11 +128,10 @@ class JournalMain extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Color.fromRGBO(0, 0, 0, 1),
-
-                            fontSize: 45,
+                            fontSize: 40,
                             letterSpacing:
                                 0 /*percentages not used in flutter. defaulting to zero*/,
-                            fontWeight: FontWeight.normal,
+                            fontWeight: FontWeight.bold,
                             height: 1),
                       )
                     ],

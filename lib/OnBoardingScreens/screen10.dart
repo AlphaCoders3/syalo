@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:syalo_app/OtherScreens/new_habit.dart';
 import 'screen11.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -62,7 +63,13 @@ class Screen10 extends StatelessWidget {
                       height: 11,
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            PageTransition(
+                                type: PageTransitionType.fade,
+                                child: NewHabit()));
+                      },
                       child: Container(
                           width: 328.0,
                           height: 65.0,
@@ -92,7 +99,13 @@ class Screen10 extends StatelessWidget {
                       height: 15,
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            PageTransition(
+                                type: PageTransitionType.fade,
+                                child: NewHabit()));
+                      },
                       child: Container(
                           width: 328.0,
                           height: 65.0,
@@ -122,7 +135,13 @@ class Screen10 extends StatelessWidget {
                       height: 15,
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            PageTransition(
+                                type: PageTransitionType.fade,
+                                child: NewHabit()));
+                      },
                       child: Container(
                           width: 328.0,
                           height: 65.0,
@@ -152,7 +171,13 @@ class Screen10 extends StatelessWidget {
                       height: 15,
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            PageTransition(
+                                type: PageTransitionType.fade,
+                                child: NewHabit()));
+                      },
                       child: Container(
                           width: 328.0,
                           height: 65.0,
@@ -184,7 +209,13 @@ class Screen10 extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.only(left: 175),
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              PageTransition(
+                                  type: PageTransitionType.fade,
+                                  child: NewHabit()));
+                        },
                         child: Container(
                             width: 115.0,
                             height: 45.0,
@@ -240,7 +271,7 @@ class Screen10 extends StatelessWidget {
                                   114),
                           child: GestureDetector(
                             onTap: () {
-                              Navigator.push(
+                              Navigator.pushReplacement(
                                   context,
                                   PageTransition(
                                       type: PageTransitionType.fade,

@@ -8,72 +8,66 @@ class HabitsFriends extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: Column(
-            children: [
-              SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Name',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          color: Color.fromRGBO(0, 0, 0, 1),
-
-                          fontSize: 20,
-                          letterSpacing:
-                              0 /*percentages not used in flutter. defaulting to zero*/,
-                          fontWeight: FontWeight.normal,
-                          height: 1),
-                    ),
-                    Text(
-                      'Today',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          color: Color.fromRGBO(0, 0, 0, 1),
-
-                          fontSize: 20,
-                          letterSpacing:
-                              0 /*percentages not used in flutter. defaulting to zero*/,
-                          fontWeight: FontWeight.normal,
-                          height: 1),
-                    ),
-                    Text(
-                      'Score',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          color: Color.fromRGBO(0, 0, 0, 1),
-
-                          fontSize: 20,
-                          letterSpacing:
-                              0 /*percentages not used in flutter. defaulting to zero*/,
-                          fontWeight: FontWeight.normal,
-                          height: 1),
-                    ),
-                  ],
-                ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+          children: [
+            SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Name',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Color.fromRGBO(0, 0, 0, 1),
+                        fontSize: 20,
+                        letterSpacing:
+                            0 /*percentages not used in flutter. defaulting to zero*/,
+                        fontWeight: FontWeight.normal,
+                        height: 1),
+                  ),
+                  Text(
+                    'Today',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Color.fromRGBO(0, 0, 0, 1),
+                        fontSize: 20,
+                        letterSpacing:
+                            0 /*percentages not used in flutter. defaulting to zero*/,
+                        fontWeight: FontWeight.normal,
+                        height: 1),
+                  ),
+                  Text(
+                    'Score',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Color.fromRGBO(0, 0, 0, 1),
+                        fontSize: 20,
+                        letterSpacing:
+                            0 /*percentages not used in flutter. defaulting to zero*/,
+                        fontWeight: FontWeight.normal,
+                        height: 1),
+                  ),
+                ],
               ),
-              Divider(color: Color.fromRGBO(0, 0, 0, 1), thickness: 1),
-              SizedBox(height: 10),
-              HabitContainer2(),
-              HabitContainer2(),
-              HabitContainer2(),
-              HabitContainer2(),
-              HabitContainer2(),
-              HabitContainer2(),
-              HabitContainer2(),
-              HabitContainer2(),
-              HabitContainer2(),
-              HabitContainer2(),
-              HabitContainer2(),
-            ],
-          ),
+            ),
+            Divider(color: Color.fromRGBO(0, 0, 0, 1), thickness: 1),
+            SizedBox(height: 10),
+            HabitContainer2(),
+            HabitContainer2(),
+            HabitContainer2(),
+            HabitContainer2(),
+            HabitContainer2(),
+            HabitContainer2(),
+            HabitContainer2(),
+            HabitContainer2(),
+            HabitContainer2(),
+            HabitContainer2(),
+            HabitContainer2(),
+          ],
         ),
       ),
     );

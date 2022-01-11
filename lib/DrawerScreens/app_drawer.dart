@@ -57,12 +57,7 @@ class AppDrawer extends StatelessWidget {
                 children: [
                   InkWell(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => ChatPage(),
-                        ),
-                      );
+
                     },
                     child: DrawerButton(
                         text: 'Appointment',
